@@ -17,7 +17,7 @@ results = search_images_bing(key, search_term, min_sz=128, max_images=count)
 ims = results.attrgot('contentUrl')
 print("Results: ", results)
 
-path = Path("./images/" + search_term)
+path = Path("./data/" + search_term)
 
 if not path.exists():
     path.mkdir()
